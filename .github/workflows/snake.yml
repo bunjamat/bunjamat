@@ -1,12 +1,13 @@
 # .github/workflows/snake.yml
-# 🐍 Generate snake animation from GitHub contribution graph
-
 name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # ทุกวันตอนเที่ยงคืน UTC
-  workflow_dispatch: # รันมือได้
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
